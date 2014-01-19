@@ -1,16 +1,16 @@
-__author__ = 'onotole'
+__author__ = 'onotole / Konrad Iturbe'
 import os,re,random,shutil,time
 import argparse
 
 parser = argparse.ArgumentParser(description='Great Description To Be Here')
 
 
-pathSD="/Volumes/NO NAME"
+pathSD="/Volumes/NO NAME" #NO NAME is the name of the SD card after a delete all from the gopro, specify the name if your SD card
 delayBefore=600  #10 min
 tmpDir="/tmp/.timelapse" + str(random.randint(0,100)) + "/"
 dstPath="~/Desktop/"
 quality='HD' #FullHD
-rate=24
+rate=24 # Frame rate for the final video, choose from 24, 30, 60 or another.
 
 def lookingForSD():
     pathSD=[]
@@ -92,9 +92,9 @@ def preparing(filesToTimeLapse,tmpDir=tmpDir):
 
 def convert(tmpDir, dstPath, zeroCount):
     if quality=='FullHD':
-        size='1900x1425'
+        size='1920x1080'#<<--- Specify another resolution if you want!
     else:
-        size='1280x960'
+        size='1280x960' # Alternative resolution (if the photos are not in HD, for instance 8 MP, 7MP, 5MP)
     convertCommand = 'cd '+ tmpDir +'; ffmpeg -f image2 -i img-%0'+ str(zeroCount) + 'd.jpg -r ' + str(rate) + \
         ' -vcodec rawvideo -pix_fmt yuv420p -s ' + size + ' ' + dstPath + 'OutputVideo' + str(time.time()).split('.')[0] + '.avi'
     os.system(convertCommand)
