@@ -1,5 +1,5 @@
-# Go.Py by Konrad Iturbe (github: @konradit) www.chernowii.com
-# This go.py will wait X seconds, turn camera on and record for Y seconds.
+# gopro.py by Konrad Iturbe (github: @konradit) www.chernowii.com
+# This gopro.py will wait X seconds, turn camera on and record for Y seconds.
 # REPLACE X AND Y BY THE TIME IN SECONDS.  REPLACE WIFIPASS BY YOUR GOPRO WIFI PASSWORD (IF YOU DIDNT SET ONE, TRY GOPROHERO
 import urllib2
 import time
