@@ -1,4 +1,9 @@
 gopro.py
 ========
 
-Cool Python Codes to control GoPro cameras via WiFi.
+Cool Python Codes for GoPro cameras.
+
+Download
+--------
+
+in a gopro.py, right click in the RAW buttom above the code.
