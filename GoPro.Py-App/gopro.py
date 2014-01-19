@@ -4,7 +4,7 @@
 #### NOTE: THIS SOFTWARE IS IN THE PUBLIC DOMAIN ####
 #####################################################
 """
-Go.Py by Konrad Iturbe, based on the work of Phill MacKay
+gopro.py by Konrad Iturbe, based on the work of Phill MacKay
 """
 
 from urllib2 import urlopen
