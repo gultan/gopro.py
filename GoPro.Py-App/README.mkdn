@@ -1,8 +1,0 @@
-gopro.py app
-===========
-
-This is a gopro app written in python, to control gopro cameras.
-
-gopro.py app is based on the work of Phill Mackay.
-
-:octocat: :octocat: :octocat:

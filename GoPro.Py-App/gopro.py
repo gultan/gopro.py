@@ -4,7 +4,7 @@
 #### NOTE: THIS SOFTWARE IS IN THE PUBLIC DOMAIN ####
 #####################################################
 """
-GoPro.Py by Konrad Iturbe, based on the work of Phill MacKay
+Go.Py by Konrad Iturbe, based on the work of Phill MacKay
 """
 
 from urllib2 import urlopen
@@ -12,7 +12,7 @@ from urllib2 import urlopen
 #import cv2
 from time import sleep
 
-# Global variable. 
+# Global variable. I know... I'm a bad programmer.
 # After importing this module, you should do: goPro.password = "your real password"
 password = "goprohero"
 
