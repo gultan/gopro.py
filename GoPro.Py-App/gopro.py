@@ -122,3 +122,27 @@ def beepLow():
 def beepHigh():
   
     send("BS","02")
+
+def burstRate3in1():
+  
+    send("BU","00")
+
+def burstRate10in1():
+  
+    send("BU","02")
+
+def burstRate10in2():
+  
+    send("BU","03")
+
+def burstRate30in1():
+  
+    send("BU","04")
+
+def burstRate30in2():
+  
+    send("BU","05")
+
+def burstRate30in3():
+  
+    send("BU","06")
